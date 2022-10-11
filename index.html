@@ -19,9 +19,28 @@
     <title>WebStudio</title>
   </head>
 
-  <!-- Encabezado de la Web apartir de aqui-->
+  <!-- Encabezado de la Web apartir de aqui / Sección backdrop es de pop-up-->
 
   <body>
+    <section class="backdrop is-hidden" data-modal>
+      <div class="modal" style="padding: 8px">
+        <div style="width: 100%; display: flex; justify-content: flex-end">
+          <button
+            data-modal-close
+            style="
+              border-radius: 50%;
+              width: 30px;
+              height: 30px;
+              border: 1px solid rgba(0, 0, 0, 0.1);
+              background: #fff;
+              cursor: pointer;
+            "
+          >
+            X
+          </button>
+        </div>
+      </div>
+    </section>
     <header class="header">
       <nav class="container">
         <div class="left">
@@ -82,13 +101,6 @@
           <button class="button" data-modal-open>
             Solicite nuestro servicio
           </button>
-
-          <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-              <p></p>
-              <button data-modal-close></button>
-            </div>
-          </div>
         </div>
       </section>
 
