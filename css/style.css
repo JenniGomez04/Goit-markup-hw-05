@@ -595,21 +595,27 @@ subrayado*/
     border: 1px solid var(--color-blue);
   }
 
+  .box img:hover{
+    border: 1px solid var(--color-blue);
+  }
+
   .box-animation{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 294px;
-    background: var(--color-blue);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    overflow: hidden;
+    background: rgba(33, 150, 243, 0.9);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) linear;
+    visibility: hidden;
+    opacity: 0;
   }
 
-  .box-animation:hover{
-
+  .box:hover .box-animation{
+    opacity: 1;
+    cursor: pointer;
+    visibility: visible; 
   }
-
    
   .box-animation > span{
     position: absolute;
